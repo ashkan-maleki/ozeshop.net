@@ -1,5 +1,6 @@
 ﻿using Catalog.API.Entities;
 using MongoDB.Driver;
+using MongoDB.Driver.Core.Clusters;
 
 namespace Catalog.API.Data;
 
@@ -16,7 +17,7 @@ class CatalogContext : ICatalogContext
 
         Products = database.GetCollection<Product>
         (configuration.GetValue<string>
-            ("DatabaseSettings:DatabaseName"));
+            ("DatabaseSettings:CollectionName"));
 
         CatalogContextSeed.SeedData(Products);
     }
