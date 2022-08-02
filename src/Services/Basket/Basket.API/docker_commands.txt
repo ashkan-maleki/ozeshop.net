@@ -2,3 +2,5 @@ docker ps
 docker pull redis
 docker run -d -p 6379:6379 --name basket-redis redis
 docker exec -it basket-redis /bin/bash
+docker-compose -f ./docker-compose.yml -f ./docker-compose.override.yml up -d
+docker-compose -f ./docker-compose.yml -f ./docker-compose.override.yml down
