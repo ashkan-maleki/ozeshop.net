@@ -14,6 +14,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
                 "CacheSettings:ConnectionString");
 });
 builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddGrpcClient<DiscountProtoService
     .DiscountProtoServiceClient>(
      o => o.Address = new Uri(
