@@ -3,7 +3,7 @@ using Shopping.Aggregator.Models;
 
 namespace Shopping.Aggregator.Services;
 
-class CatalogService : ICatalogService
+public class CatalogService : ICatalogService
 {
     private readonly HttpClient _client;
 
