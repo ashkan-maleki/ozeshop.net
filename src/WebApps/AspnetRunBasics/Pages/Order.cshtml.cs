@@ -23,7 +23,7 @@ namespace AspnetRunBasics
         public async Task<IActionResult> OnGetAsync()
         {
             string userName = "swn";
-            Orders = await _orderService
+              Orders = await _orderService
                 .GetOrdersByUserName(userName);
 
             return Page();

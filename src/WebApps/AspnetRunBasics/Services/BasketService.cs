@@ -16,7 +16,10 @@ class BasketService : IBasketService
     {
         var response = await _client
             .GetAsync($"/Basket/{userName}");
-        return await response.ReadContentAs<BasketModel>();
+        BasketModel basket = 
+            await response.ReadContentAs<BasketModel>() ?? new BasketModel();
+        basket.Items ??= new List<BasketItemModel>();
+        return basket;
     }
 
     public async Task<BasketModel> UpdateBasket(BasketModel model)

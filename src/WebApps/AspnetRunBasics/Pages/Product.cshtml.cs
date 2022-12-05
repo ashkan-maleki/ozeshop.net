@@ -60,6 +60,10 @@ namespace AspnetRunBasics
             string userName = "swn";
             BasketModel basket = await _basketService.GetBasket(userName);
 
+            if (basket is not null && basket.Items is null)
+            {
+                basket.Items = new List<BasketItemModel>();
+            }
             basket.Items.Add(new BasketItemModel
             {
                 ProductId = productId,
