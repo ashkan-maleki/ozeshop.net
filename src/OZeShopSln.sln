@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Query.Infrastructur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Query.API", "Services\Catalog\Catalog.Query\Catalog.Query.API\Catalog.Query.API.csproj", "{D4A11C6F-8D6C-40EF-8238-FD08CF88BCF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Common", "BuildingBlocks\Infrastructure.Common\Infrastructure.Common.csproj", "{2E138A96-3D23-4F97-8327-296151AF6719}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{D4A11C6F-8D6C-40EF-8238-FD08CF88BCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4A11C6F-8D6C-40EF-8238-FD08CF88BCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4A11C6F-8D6C-40EF-8238-FD08CF88BCF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E138A96-3D23-4F97-8327-296151AF6719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E138A96-3D23-4F97-8327-296151AF6719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E138A96-3D23-4F97-8327-296151AF6719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E138A96-3D23-4F97-8327-296151AF6719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +168,7 @@ Global
 		{06B5DF61-6448-4560-AAE7-D4ECEBFF3153} = {E443B361-D411-4DB3-98F5-EE21160CACE0}
 		{94139027-CB4C-4BCF-8679-AC0F61B34631} = {E443B361-D411-4DB3-98F5-EE21160CACE0}
 		{D4A11C6F-8D6C-40EF-8238-FD08CF88BCF9} = {E443B361-D411-4DB3-98F5-EE21160CACE0}
+		{2E138A96-3D23-4F97-8327-296151AF6719} = {E1C0EAEE-3FD8-42D5-AB10-3F806168F00D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA0D8F52-D7C3-4B75-AD1E-39537AC53A7D}
