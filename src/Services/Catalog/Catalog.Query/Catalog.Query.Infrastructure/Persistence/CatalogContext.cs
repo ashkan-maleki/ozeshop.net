@@ -1,4 +1,5 @@
-﻿using Infrastructure.Common.Configuration;
+﻿using Catalog.Query.Domain.Entities;
+using Infrastructure.Common.Configuration;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
@@ -11,11 +12,8 @@ public class CatalogContext : ICatalogContext
         MongoDbConfig config = options.Value;
         IMongoClient client = new MongoClient(config.ConnectionString);
         IMongoDatabase db = client.GetDatabase(config.Database);
-        CreateModel(db);
+        Products = db.GetCollection<Product>(config.Collection);
     }
 
-    private void CreateModel(IMongoDatabase db)
-    {
-        
-    }
+    public IMongoCollection<Product> Products { get; }
 }
