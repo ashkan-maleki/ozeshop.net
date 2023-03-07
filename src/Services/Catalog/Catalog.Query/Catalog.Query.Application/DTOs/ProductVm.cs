@@ -3,7 +3,7 @@
 namespace Catalog.Query.Application.DTOs;
 
 public record ProductVm(
-    string? Id,
+    string Id,
     string? Name,
     string? Category,
     string? Summary,

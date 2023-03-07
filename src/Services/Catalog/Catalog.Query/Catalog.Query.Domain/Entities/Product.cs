@@ -1,9 +1,10 @@
-﻿using MongoDB.Bson;
+﻿using Common.Domain;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace Catalog.Query.Domain.Entities;
 
-public class Product
+public class Product 
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]

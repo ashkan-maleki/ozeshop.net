@@ -37,7 +37,7 @@ namespace Catalog.API.Controllers
         public async Task<ActionResult<Product>>
             GetProduct(string id)
         {
-            var product = await _repository
+            Product product = await _repository
                 .GetProductAsync(id);
             if (product == null)
             {

@@ -1,9 +1,10 @@
 ﻿using Catalog.Query.Domain.Entities;
+using Catalog.Query.Infrastructure.Persistence;
 using Infrastructure.Common.Configuration;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace Catalog.Query.Infrastructure.Persistence;
+namespace Catalog.Query.Application.Persistence;
 
 public class CatalogContext : ICatalogContext
 {
