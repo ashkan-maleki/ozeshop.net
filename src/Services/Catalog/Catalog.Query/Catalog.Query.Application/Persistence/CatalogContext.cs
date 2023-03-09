@@ -6,6 +6,7 @@ using MongoDB.Driver;
 
 namespace Catalog.Query.Application.Persistence;
 
+
 public class CatalogContext : ICatalogContext
 {
     public CatalogContext(IOptions<MongoDbConfig> options)
@@ -17,4 +18,5 @@ public class CatalogContext : ICatalogContext
     }
 
     public IMongoCollection<Product> Products { get; }
+
 }
